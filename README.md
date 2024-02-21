@@ -1,12 +1,12 @@
 # VBA-JSON
 
 Conversão e análise de JSON para VBA (Excel no Windows e Mac, Access e outras aplicações do Office).
-Este projeto evoluiu a partir do excelente projeto vba-json, com adições e melhorias feitas para resolver bugs e melhorar o desempenho (como parte do [VBA-Web](https://github.com/VBA-tools/VBA-Web)).
+Este projeto evoluiu a partir do excelente projeto vba-json, com adições e melhorias feitas para resolver bugs e melhorar o desempenho.
 
 Testado no Excel 2013 para Windows e Excel 2011 para Mac, mas deve funcionar a partir do Excel 2007.
 
-- Para suporte apenas no Windows, inclua uma referência para "Microsoft Scripting Runtime"
-- Para suporte no Mac e Windows, inclua [VBA-Dictionary](https://github.com/VBA-tools/VBA-Dictionary)
+- Para suporte apenas no Windows, incluir referência para "Microsoft Scripting Runtime"
+- Para suporte no Mac e Windows, incluir referência "Microsoft WinHTTP Services"
 
 # Exemplos
 
