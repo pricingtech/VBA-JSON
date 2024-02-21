@@ -1,19 +1,18 @@
 # VBA-JSON
 
-JSON conversion and parsing for VBA (Windows and Mac Excel, Access, and other Office applications).
-It grew out of the excellent project [vba-json](https://code.google.com/p/vba-json/),
-with additions and improvements made to resolve bugs and improve performance (as part of [VBA-Web](https://github.com/VBA-tools/VBA-Web)).
+Conversão e análise de JSON para VBA (Excel no Windows e Mac, Access e outras aplicações do Office).
+Este projeto evoluiu a partir do excelente projeto vba-json, com adições e melhorias feitas para resolver bugs e melhorar o desempenho (como parte do [VBA-Web](https://github.com/VBA-tools/VBA-Web)).
 
-Tested in Windows Excel 2013 and Excel for Mac 2011, but should apply to 2007+.
+Testado no Excel 2013 para Windows e Excel 2011 para Mac, mas deve funcionar a partir do Excel 2007.
 
-- For Windows-only support, include a reference to "Microsoft Scripting Runtime"
-- For Mac and Windows support, include [VBA-Dictionary](https://github.com/VBA-tools/VBA-Dictionary)
+- Para suporte apenas no Windows, inclua uma referência para "Microsoft Scripting Runtime"
+- Para suporte no Mac e Windows, inclua [VBA-Dictionary](https://github.com/VBA-tools/VBA-Dictionary)
 
 <a href="https://www.patreon.com/timhall">
   <img src="https://timhall.github.io/assets/donate-patreon@2x.png" width="217" alt="Donate">
 </a>
 
-# Examples
+# Exemplos
 
 ```vb
 Dim Json As Object
@@ -81,9 +80,9 @@ Next Value
 Sheets("example").Range(Cells(1, 1), Cells(Parsed("values").Count, 3)) = Values
 ```
 
-## Options
+## Opções
 
-VBA-JSON includes a few options for customizing parsing/conversion if needed:
+VBA-JSON inclui algumas opções para personalizar a análise/conversão, se necessário:
 
 - __UseDoubleForLargeNumbers__ (Default = `False`) VBA only stores 15 significant digits, so any numbers larger than that are truncated.
   This can lead to issues when BIGINT's are used (e.g. for Ids or Credit Cards), as they will be invalid above 15 digits.
@@ -95,14 +94,14 @@ VBA-JSON includes a few options for customizing parsing/conversion if needed:
 JsonConverter.JsonOptions.EscapeSolidus = True
 ```
 
-## Installation
+## Instalação
 
-1. Download the [latest release](https://github.com/VBA-tools/VBA-JSON/releases)
-2. Import `JsonConverter.bas` into your project (Open VBA Editor, `Alt + F11`; File > Import File)
-3. Add `Dictionary` reference/class
-   - For Windows-only, include a reference to "Microsoft Scripting Runtime"
-   - For Windows and Mac, include [VBA-Dictionary](https://github.com/VBA-tools/VBA-Dictionary)
+1. Baixe a [latest release](https://github.com/VBA-tools/VBA-JSON/releases)
+2. Importe `JsonConverter.bas` para o seu projeto (Abra o Editor VBA, `Alt + F11`; Arquivo > Importar Arquivo)
+3. Adicione a referência/classe
+   - Para Windows apenas, inclua uma referência para "Microsoft Scripting Runtime"
+   - Para Windows e Mac, inclua [VBA-Dictionary](https://github.com/VBA-tools/VBA-Dictionary)
 
-## Resources
+## Recursos
 
-- [Tutorial Video (Red Stapler)](https://youtu.be/CFFLRmHsEAs)
+- [Vídeo Tutorial (Red Stapler)](https://youtu.be/CFFLRmHsEAs)
