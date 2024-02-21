@@ -92,11 +92,11 @@ JsonConverter.JsonOptions.EscapeSolidus = True
 
 ## Instalação
 
-1. Baixe a [latest release](https://github.com/VBA-tools/VBA-JSON/releases)
+1. Baixe a [latest release](https://github.com/pricingtech/VBA-JSON)
 2. Importe `JsonConverter.bas` para o seu projeto (Abra o Editor VBA, `Alt + F11`; Arquivo > Importar Arquivo)
 3. Adicione a referência/classe
-   - Para Windows apenas, inclua uma referência para "Microsoft Scripting Runtime"
-   - Para Windows e Mac, inclua [VBA-Dictionary](https://github.com/VBA-tools/VBA-Dictionary)
+   - Para Windows apenas, incluir referência para "Microsoft Scripting Runtime"
+   - Para Windows e Mac, incluir referência "Microsoft WinHTTP Services"
 
 ## Recursos
 
