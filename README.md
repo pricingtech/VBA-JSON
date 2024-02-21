@@ -8,10 +8,6 @@ Testado no Excel 2013 para Windows e Excel 2011 para Mac, mas deve funcionar a p
 - Para suporte apenas no Windows, inclua uma referência para "Microsoft Scripting Runtime"
 - Para suporte no Mac e Windows, inclua [VBA-Dictionary](https://github.com/VBA-tools/VBA-Dictionary)
 
-<a href="https://www.patreon.com/timhall">
-  <img src="https://timhall.github.io/assets/donate-patreon@2x.png" width="217" alt="Donate">
-</a>
-
 # Exemplos
 
 ```vb
